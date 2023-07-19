@@ -1,5 +1,5 @@
 # computer-vision-projects
-This repo is a documentation for computer vision mini-project developed at Computer Vision Course at UMD.
+This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of a computer-vision class I took at University of Maryland. 
 
 # Repository Overview 
 
