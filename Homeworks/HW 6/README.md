@@ -70,3 +70,90 @@ Overall, this assignment solidified our understanding of building and training a
 ## References
 - [PyTorch Tutorials](https://pytorch.org/tutorials/beginner/introyt/trainingyt.html)
 - [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+# HW6 Part 2 - Semantic Segmentation README
+
+## Introduction
+In the second part of the homework assignment 6, the task involved implementing a semantic segmentation model and running it on a dataset. Semantic segmentation is an image analysis task where every pixel in an image is classified into a class. As such, given an image, the goal was to generate a semantically segmented version of it where each pixel was assigned a class.
+
+![Original image](./original_image.png)
+> An original image
+
+![Semantically segmented image](./segmented_image.png)
+> The semantically segmented image corresponding to the original image
+
+The classes for the segmentation were defined as follows:
+
+```python
+VOC_CLASSES = [
+    "background",
+    "aeroplane",
+    "bicycle",
+    "bird",
+    "boat",
+    "bottle",
+    "bus",
+    "car",
+    "cat",
+    "chair",
+    "cow",
+    "diningtable",
+    "dog",
+    "horse",
+    "motorbike",
+    "person",
+    "potted plant",
+    "sheep",
+    "sofa",
+    "train",
+    "tv/monitor",
+]
+```
+
+## Implementation
+
+The task was divided into two main parts:
+
+### 1. Data Loader for Training and Validation
+
+This involved implementing a custom `VocDataset` class that would serve as the dataloader for the training and validation data. This dataloader takes in the images, applies necessary transformations, and converts the mask image into a segmentation mask where each pixel corresponds to the class index.
+
+```python
+class VocDataset():
+  ...
+```
+
+The image transformations applied included resizing to a common size, converting to a tensor, and normalizing the pixel values.
+
+### 2. Model Definition and Training Code
+
+The next task was to implement a Fully Convolutional Network (FCN) model and the associated training code.
+
+The initial model architecture based on the VGG16 model didn't produce the desired results. It involved creating a modified version of VGG16 where the last classification layer was replaced with a convolutional layer, followed by an upsampling layer. However, this implementation didn't yield satisfactory results.
+
+The revised model architecture leveraged the VGG16 model as a pretrained feature extractor and added a series of upsampling layers to achieve the final segmentation. This modification worked, and the model was able to generate meaningful segmentation maps.
+
+The implemented model was then trained for 10 epochs with a batch size of 4.
+
+```python
+fcn32 = FCN32(n_classes=21, pretrained_model=encoder_net_vgg16)
+fcn32.to(device)
+
+...
+
+for epoch in range(epochs):
+    ...
+```
+
+## Results
+
+After training, the model was able to segment the input images with reasonable accuracy. This shows that the FCN-32 model was a good choice for the task.
+
+![Training Results](./training_results.png)
+> Some visual results from the model after training
+
+*Note: The image placeholders need to be replaced with the actual images generated from your notebook.*
+
+## Conclusion
+
+In conclusion, this assignment provided hands-on experience with semantic segmentation, an important task in many computer vision applications. The challenges faced during the implementation, specifically in designing the architecture of the model, were a great opportunity to understand the intricacies of different architectures and their impact on the final results. The experiment further solidified the understanding of the importance of well-implemented data loaders and efficient preprocessing in the overall machine learning pipeline.
