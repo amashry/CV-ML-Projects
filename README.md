@@ -43,3 +43,8 @@ The sixth homework is divided into two parts:
 The final project focuses on implementing visual odometry to reconstruct the 3D trajectory of a camera mounted on a vehicle. The project employs various computer vision techniques, such as keypoint detection, fundamental and essential matrix estimation, and decomposition into translation and rotation parameters. Two distinct approaches are implemented: one that leverages built-in functions provided by OpenCV and a custom approach. The final product is a 3D plot visualizing the trajectory of the camera.
 
 This repository showcases a wide range of image processing, computer vision, and machine learning techniques, making it a comprehensive overview of these fascinating domains. The implementation details, results, and lessons learned in each assignment and project will provide insights into these areas of study. 
+
+## TODO's
+1. Add images to the hws that don't have images to describe
+2. Add images to the project readme
+3. Add images to the main readme to visualize different hws and show results of each one.
