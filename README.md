@@ -1,4 +1,4 @@
-# computer-vision-projects
+# computer-vision-machine-learning-projects
 This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of a computer-vision class I took at University of Maryland. 
 
 # Repository Overview 
