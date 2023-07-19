@@ -8,7 +8,6 @@ This repository contains the implementation of a Visual Odometry project. The pr
 - [Visual Odometry Using OpenCV Built-In Functions](#visual-odometry-using-opencv-built-in-functions)
 - [Visual Odometry Using Custom Implementation](#visual-odometry-using-custom-implementation)
 - [Results](#results)
-- [License](#license)
 
 ## Project Overview
 Visual odometry is an important concept in robotic perception, used to estimate the trajectory of a robot (or more precisely, the robot's camera). This project seeks to reconstruct the camera's trajectory, which, by implication, represents the movement path of the vehicle itself. 
