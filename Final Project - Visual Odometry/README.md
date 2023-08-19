@@ -1,13 +1,34 @@
 # Visual Odometry Project
-This repository contains the implementation of a Visual Odometry project. The project aims to reconstruct the three-dimensional (3D) trajectory of a camera mounted on a vehicle using a sequence of frames captured during a driving sequence. Two distinct approaches are implemented to achieve the objective: one leveraging built-in functions provided by openCV, and the other focusing on custom functions created for this project.
+This repository contains the implementation of a Visual Odometry project. The project aims to reconstruct the three-dimensional (3D) trajectory of a camera mounted on a vehicle using a sequence of frames captured during a driving sequence. The dataset used is collected by Oxford Robotics Institute. Two distinct approaches are implemented to achieve the objective: one leveraging built-in functions provided by openCV, and the other focusing on custom functions created for this project without using off-the-shelf openCV functions. 
 
 ## Table of Contents
+- [Dataset](#dataset)
+- [Results](#results)
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Visual Odometry Using OpenCV Built-In Functions](#visual-odometry-using-opencv-built-in-functions)
 - [Visual Odometry Using Custom Implementation](#visual-odometry-using-custom-implementation)
-- [Results](#results)
+
+## Dataset 
+A sequence of 377 images captured during a driving sequence from a car driving around a block in a loop as shown below. Note that the GIF below shows the image sequence after using the camera intrinsic model calibration for image rectification and for removing distortion.  
+
+![oxford_car_dataset_undistorted (1)](https://github.com/amashry/CV-ML-Projects/assets/98168605/ee071929-5e4c-42d0-a655-717d0762cdbd)
+
+## Results
+
+Both the OpenCV and the custom implementations provide a 2D and 3D trajectory of the camera's movement over the driving sequence. These trajectories serve as the camera's visual odometry.
+
+<table>
+<tr>
+<td>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/51bb8473-e891-42ba-8280-b458566b3e20" alt="Camera 2D Trajectory" width="450"/>
+</td>
+<td>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/fa220c4f-c582-4bcd-a263-aba2da70a67a" alt="Camera 3D Trajectory" width="450"/>
+</td>
+</tr>
+</table>
 
 ## Project Overview
 Visual odometry is an important concept in robotic perception, used to estimate the trajectory of a robot (or more precisely, the robot's camera). This project seeks to reconstruct the camera's trajectory, which, by implication, represents the movement path of the vehicle itself. 
@@ -18,7 +39,12 @@ The implementation process involves several key steps:
 - Decomposing the essential matrices into translation and rotation parameters.
 - Plotting the camera center to visualize the 3D trajectory.
 
-Two distinct routes are implemented to perform these steps. The first approach relies on openCV's built-in functions, while the second uses custom functions created specifically for this project. The motivation behind the second approach is to gain a deeper understanding of the underlying processes and to explore the potential for customization and optimization beyond the capabilities provided by off-the-shelf functions.
+Two routes are implemented to perform these steps. The first approach relies on openCV's built-in functions, while the second uses custom functions created for this project. The motivation behind the second approach is to gain a deeper understanding of the underlying processes and to explore the potential for customization and optimization beyond the capabilities provided by off-the-shelf functions. 
+
+<figure>
+    <img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/0e22e2ee-9f3b-4da0-9639-7845685ef465" alt="Key Feature Matching between frames"/>
+    <figcaption>Key Feature Matching between consecutive frames in the video sequence.</figcaption>
+</figure>
 
 ## Getting Started
 To get started with the project, clone this repository to your local machine. The project requires Python 3.6 or higher and the following Python packages installed:
@@ -64,11 +90,3 @@ This approach employs custom functions created for this project. These functions
 9. Calculating Visual Odometry to Reconstruct the Trajectory: `visual_odometry`
 
 More detailed information about each step can be found in the full technical report.
-
-## Results
-Both the OpenCV and the custom implementations provide a 2D and 3D trajectory of the camera's movement over the driving sequence. These trajectories serve as the camera's visual odometry.
-
-![Alt text](path-to-image.jpg?raw=true "2D Trajectory")
-![Alt text](path-to-image.jpg?raw=true "3D Trajectory")
-
-
