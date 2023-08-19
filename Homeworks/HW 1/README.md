@@ -1,4 +1,4 @@
-# Homework 1 - Readme
+# CV-Homework 1
 
 This homework is divided into two parts: Hybrid Image and Pyramid Image. Each part has a specific purpose and uses a different image processing approach. The homework was implemented using Python in a Google Colab notebook. 
 
