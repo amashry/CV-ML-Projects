@@ -1,5 +1,5 @@
 # computer-vision-machine-learning-projects
-This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of a computer-vision class I took at University of Maryland. 
+This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of graduate courses in ML/CV I took at University of Maryland.  
 
 # Repository Overview 
 
@@ -15,6 +15,8 @@ The first homework introduces two image processing techniques: Hybrid Image crea
 
 - **Hybrid Image**: Combines two images by applying low-pass filtering to one and high-pass filtering to the other. The hybrid image appears to be one picture when viewed up close and another when viewed from afar. This task leverages several Python libraries such as cv2, numpy, pandas, skimage, PIL, matplotlib, and scipy.
 - **Pyramid Image**: Constructs Gaussian and Laplacian pyramids from an image. Each level of the pyramid has half the resolution of its predecessor. The pyramids are then visualized both as intensity images and as the log magnitude of their Fast Fourier Transform (FFT).
+
+![download (1)](https://github.com/amashry/CV-ML-Projects/assets/98168605/ebaecd59-b48b-4945-bea4-2779a6ff450c)
 
 ### Homework 2: Keypoint Selection and Feature Tracking 
 
@@ -40,9 +42,25 @@ The sixth homework is divided into two parts:
 
 ## Final Project: Visual Odometry 
 
-The final project focuses on implementing visual odometry to reconstruct the 3D trajectory of a camera mounted on a vehicle. The project employs various computer vision techniques, such as keypoint detection, fundamental and essential matrix estimation, and decomposition into translation and rotation parameters. Two distinct approaches are implemented: one that leverages built-in functions provided by OpenCV and a custom approach. The final product is a 3D plot visualizing the trajectory of the camera.
+The final project focuses on implementing visual odometry to reconstruct the 3D trajectory of a camera mounted on a vehicle. The project employs various computer vision techniques, such as keypoint detection, fundamental and essential matrix estimation, and decomposition into translation and rotation parameters. Two distinct approaches are implemented: one that leverages built-in functions provided by OpenCV and a custom approach not relying on openCV built-in functions. The final product is a 3D plot visualizing the trajectory of the camera.
 
-This repository showcases a wide range of image processing, computer vision, and machine learning techniques, making it a comprehensive overview of these fascinating domains. The implementation details, results, and lessons learned in each assignment and project will provide insights into these areas of study. 
+<table>
+<tr>
+<td>
+<figcaption>
+  Undistorted Sequence GIF
+</figcaption>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/ee071929-5e4c-42d0-a655-717d0762cdbd" alt="Undistorted Sequence GIF" width="450"/>
+</td>
+<td>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/51bb8473-e891-42ba-8280-b458566b3e20" alt="Camera 2D Trajectory" width="450"/>
+</td>
+<td>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/fa220c4f-c582-4bcd-a263-aba2da70a67a" alt="Camera 3D Trajectory" width="450"/>
+</td>
+</tr>
+</table>
+
 
 ## TODO's
 1. Add images to the hws that don't have images to describe
