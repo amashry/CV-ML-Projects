@@ -4,7 +4,6 @@ In this homework assignment, I implemented a feature tracker that can track feat
 
 ![Image](https://www.cs.umd.edu/class/spring2023/cmsc426-0201/hw_images/1_overview.png)
 
-
 ### Part 1: Keypoint Selection
 
 The purpose of the keypoint selection was to identify potential features that can be tracked throughout the image sequence. To achieve this, I employed the Harris corner detection algorithm. The `getKeypoints()` function, which I implemented, takes an image and a threshold as input. It then follows the following steps to identify keypoints:
@@ -18,9 +17,9 @@ The purpose of the keypoint selection was to identify potential features that ca
 
 I used `tau = 0.06` as the threshold and computed keypoints for the first frame of the image sequence.
 
-![Keypoints](./keypoints_image.png)
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/2a17692d-60c1-4cb7-acdd-fa7abd3eda89" width=40%> 
 
-Above, I've shown the first frame of the sequence overlaid with the detected keypoints. 
+Above is the first frame of the sequence overlaid with the detected keypoints. 
 
 ### Part 2: Feature Tracking
 
@@ -38,13 +37,8 @@ The keypoints from the first frame are used as initial points for the tracking. 
 
 Keypoints are tracked throughout the image sequence and any track where the predicted translation falls outside the image frame is discarded.
 
-![First_Sequence](./first_sequence.png)
-![First_to_Second_Sequence](./first_to_second_sequence.png)
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/e645395c-8148-4cf1-af83-1085ba91640b" width=33%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/cc6d0470-790f-425b-a42e-fc4e9486b374" width=33%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/285e1dd5-e3c7-4b2f-a5f4-a9c81d82e8f9" width=33%>
 
-Above are two images: The first one shows the keypoints overlaid in the first sequence, and the second one shows the keypoints at the first frame (green) and the tracked keypoints at the second frame (red) on the first frame of the sequence.
-
-Additionally, I also plotted the 2D path of 20 random keypoints over the sequence of frames. The path is overlaid on the first frame of the sequence as shown below:
-
-![Random_Keypoints](./random_keypoints.png)
-
-This homework assignment provided a comprehensive understanding of how to use feature detection algorithms and optical flow to track keypoints throughout an image sequence. It was an exciting exploration into the foundational aspects of computer vision.
+Above are three plots: The first one shows the keypoints overlaid in the first sequence, and the second one shows the keypoints at the first frame (green) and the tracked keypoints at the second frame (red) on the first frame of the sequence. Additionally, I also plotted the 2D path of 20 random keypoints over the sequence of frames. The path is overlaid on the first frame of the sequence as shown below:
