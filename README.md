@@ -1,15 +1,17 @@
 # computer-vision-machine-learning-projects
-This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of graduate courses in ML/CV I took at University of Maryland.  
+
+This repository is a robust showcase of applications and projects in Computer Vision and Machine Learning, which have been part of ML/CV graduate courses that I took at University of Maryland (UMD).  
 
 # Repository Overview 
 
-This repository documents the journey through a series of image processing, computer vision and machine learning tasks, encapsulated within six homework assignments and a final project. Each piece of work introduces unique concepts and employs various algorithms and techniques, providing a comprehensive view of the evolving capabilities learned over the course. 
+This repository documents a series of image processing, computer vision and machine learning tasks, encapsulated within mini-projects and final projects. Projects implemented within the computer vision class has been labeled with `CV` in the title. Projects that has been implemented while taking the graduate Machine Learning class has been also labeled with `ML` in the title. 
 
 The following summarizes the content of this repository:
 
-## Homework Assignments 
+# Computer Vision Projects 
+## 1. CV Mini Projects 
 
-### Homework 1: Hybrid and Pyramid Images 
+### Project 1 - Hybrid and Pyramid Images 
 
 The first homework introduces two image processing techniques: Hybrid Image creation and Pyramid Image construction. 
 
@@ -18,29 +20,29 @@ The first homework introduces two image processing techniques: Hybrid Image crea
 
 ![download (1)](https://github.com/amashry/CV-ML-Projects/assets/98168605/ebaecd59-b48b-4945-bea4-2779a6ff450c)
 
-### Homework 2: Keypoint Selection and Feature Tracking 
+### Project 2: Keypoint Selection and Feature Tracking 
 
 The second homework deals with tracking features in an image sequence using Harris corner detection for keypoint selection and the Kanade-Lucas-Tomasi (KLT) algorithm for feature tracking.
 
-### Homework 3: Shape Alignment and Object Instance Recognition 
+### Project 3: Shape Alignment and Object Instance Recognition 
 
 The third homework assignment focuses on the alignment of two sets of points using the Iterative Closest Point (ICP) algorithm and object instance recognition using the Lowe's Scale Invariant Feature Transform (SIFT) algorithm.
 
-### Homework 4: Epipolar Geometry and Image Stitching 
+### Project 4: Epipolar Geometry and Image Stitching 
 
 In this assignment, the focus is on epipolar geometry and the application of the Normalized 8-point algorithm with RANSAC to estimate the Fundamental Matrix. It also involves image stitching, a technique to combine multiple images with overlapping fields of view to create a wide-angle panorama.
 
-### Homework 5: Affine Structure from Motion 
+### Project 5: Affine Structure from Motion 
 
 The fifth homework explores the topic of Structure from Motion (SfM), a technique for estimating 3D structures from 2D image sequences. The task was to recover a 3D point cloud from an image sequence using the Affine Structure from Motion algorithm.
 
-### Homework 6: Image Classification and Semantic Segmentation 
+### Project 6: Image Classification and Semantic Segmentation 
 
 The sixth homework is divided into two parts:
 - **Part 1**: Involves training an image classifier using the CIFAR-10 dataset and the PyTorch library. The classifier is trained to correctly identify images across 10 different classes.
 - **Part 2**: Implements a semantic segmentation model that assigns a class to each pixel in an image. This part introduces the concepts of semantic segmentation in computer vision.
 
-## Final Project: Visual Odometry 
+## 2. CV Final Project: Visual Odometry 
 
 The final project focuses on implementing visual odometry to reconstruct the 3D trajectory of a camera mounted on a vehicle. The project employs various computer vision techniques, such as keypoint detection, fundamental and essential matrix estimation, and decomposition into translation and rotation parameters. Two distinct approaches are implemented: one that leverages built-in functions provided by OpenCV and a custom approach not relying on openCV built-in functions. The final product is a 3D plot visualizing the trajectory of the camera.
 
