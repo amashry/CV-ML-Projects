@@ -18,29 +18,50 @@ The first homework introduces two image processing techniques: Hybrid Image crea
 - **Hybrid Image**: Combines two images by applying low-pass filtering to one and high-pass filtering to the other. The hybrid image appears to be one picture when viewed up close and another when viewed from afar. This task leverages several Python libraries such as cv2, numpy, pandas, skimage, PIL, matplotlib, and scipy.
 - **Pyramid Image**: Constructs Gaussian and Laplacian pyramids from an image. Each level of the pyramid has half the resolution of its predecessor. The pyramids are then visualized both as intensity images and as the log magnitude of their Fast Fourier Transform (FFT).
 
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-1)
+
 ![download (1)](https://github.com/amashry/CV-ML-Projects/assets/98168605/ebaecd59-b48b-4945-bea4-2779a6ff450c)
+
 
 ### Project 2: Keypoint Selection and Feature Tracking 
 
 The second homework deals with tracking features in an image sequence using Harris corner detection for keypoint selection and the Kanade-Lucas-Tomasi (KLT) algorithm for feature tracking.
 
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-2)
+
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/e645395c-8148-4cf1-af83-1085ba91640b" width=33%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/cc6d0470-790f-425b-a42e-fc4e9486b374" width=33%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/285e1dd5-e3c7-4b2f-a5f4-a9c81d82e8f9" width=33%>
+
+
 ### Project 3: Shape Alignment and Object Instance Recognition 
 
 The third homework assignment focuses on the alignment of two sets of points using the Iterative Closest Point (ICP) algorithm and object instance recognition using the Lowe's Scale Invariant Feature Transform (SIFT) algorithm.
+
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-3)
+
 
 ### Project 4: Epipolar Geometry and Image Stitching 
 
 In this assignment, the focus is on epipolar geometry and the application of the Normalized 8-point algorithm with RANSAC to estimate the Fundamental Matrix. It also involves image stitching, a technique to combine multiple images with overlapping fields of view to create a wide-angle panorama.
 
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-4)
+
+
 ### Project 5: Affine Structure from Motion 
 
 The fifth homework explores the topic of Structure from Motion (SfM), a technique for estimating 3D structures from 2D image sequences. The task was to recover a 3D point cloud from an image sequence using the Affine Structure from Motion algorithm.
+
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-5)
+
 
 ### Project 6: Image Classification and Semantic Segmentation 
 
 The sixth homework is divided into two parts:
 - **Part 1**: Involves training an image classifier using the CIFAR-10 dataset and the PyTorch library. The classifier is trained to correctly identify images across 10 different classes.
 - **Part 2**: Implements a semantic segmentation model that assigns a class to each pixel in an image. This part introduces the concepts of semantic segmentation in computer vision.
+
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-6)
 
 ## 2. CV Final Project: Visual Odometry 
 
@@ -63,6 +84,7 @@ The final project focuses on implementing visual odometry to reconstruct the 3D 
 </tr>
 </table>
 
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-Final%20Project%20-%20Visual%20Odometry)
 
 ## TODO's
 1. Add images to the hws that don't have images to describe
