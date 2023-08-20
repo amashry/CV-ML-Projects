@@ -95,3 +95,23 @@ The final project focuses on implementing visual odometry to reconstruct the 3D 
 [Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-Final%20Project%20-%20Visual%20Odometry)
 
 ---
+
+# Machine Learning Projects 
+## Project 1 - Interactive Visualization of California Housing Data
+
+This project aims to provide an interactive visualization of the California Housing Data, focusing primarily on plotting the data on a map according to the longitude and latitude, with house prices reflected visually. The visualization further allows users to filter data based on various housing features to better understand the distribution.
+
+ <img src="/ML-Projects/project1-interactive-visualization/results/sample_plot_result.png" alt="Plotly Express Interactive Plot" width=70%>
+ 
+## Project 2 - SGD Extensions and Variants Implementation & Animation
+
+The project details the implementation of three optimization techniques: Vanilla SGD, Momentum-based SGD, and Adagrad. They're tested on the Rosenbrock and Styblinski-Tang functions, with their performances visualized through animations showing solution paths on function contours.
+
+Rosenbrock Animation
+
+<img src="/ML-Projects/project2-Advanced-SGD-Methods/results/Rosenbrock.gif" width=70%>
+
+Styblinski_tang Animation 
+
+<img src="/ML-Projects/project2-Advanced-SGD-Methods/results/styblinski_tang.gif" width=70%>
+
