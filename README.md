@@ -26,9 +26,9 @@ The second homework deals with tracking features in an image sequence using Harr
 
 [Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/CV-mini-projects/project-2)
 
-<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/e645395c-8148-4cf1-af83-1085ba91640b" width=33%>
-<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/cc6d0470-790f-425b-a42e-fc4e9486b374" width=33%>
-<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/285e1dd5-e3c7-4b2f-a5f4-a9c81d82e8f9" width=33%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/e645395c-8148-4cf1-af83-1085ba91640b" width=30%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/cc6d0470-790f-425b-a42e-fc4e9486b374" width=30%>
+<img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/285e1dd5-e3c7-4b2f-a5f4-a9c81d82e8f9" width=30%>
 
 
 ### Project 3: Shape Alignment and Object Instance Recognition 
