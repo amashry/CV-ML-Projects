@@ -2,9 +2,9 @@
 
 ## Part 1: Epipolar Geometry (30 Points)
 
-In the first part of the homework, we focused on the concept of Epipolar Geometry and the implementation of the Normalized 8-point algorithm with RANSAC to automatically estimate the Fundamental Matrix (F).
+In the first part of this project, we focused on the concept of Epipolar Geometry and the implementation of the Normalized 8-point algorithm with RANSAC to automatically estimate the Fundamental Matrix (F).
 
-![Epipolar Geometry](https://www.cs.umd.edu/class/spring2023/cmsc426-0201/hw_images/epipolar_geometry.jpg)
+![Epipolar Geometry](https://github.com/amashry/CV-ML-Projects/assets/98168605/a5bbdb6b-f03e-43b0-9327-253dbd515d20)
 
 ### Brief Overview
 
@@ -20,13 +20,11 @@ The `computeF()` function calculated the fundamental matrix from corresponding p
 
 Finally, we estimated the fundamental matrix F, normalized it so the last entry is 1, and visualized the images with corresponding epipolar lines using the `plot_epipolar_lines()` function.
 
-The implementation demonstrated the application of computer vision theory to real-world problem-solving, especially in the case of image alignment and stereoscopic vision.
-
 ## Part 2: Image Stitching (30 Points)
 
-In the second part of the homework, we worked on Image Stitching, which is a technique used to combine multiple images with overlapping fields of view to produce a wide-angle panorama.
+In the second part, we worked on Image Stitching, which is a technique used to combine multiple images with overlapping fields of view to produce a wide-angle panorama.
 
-![Image Stitching](https://www.cs.umd.edu/class/spring2023/cmsc426-0201/hw_images/image_stitching.png)
+![Image Stitching](https://github.com/amashry/CV-ML-Projects/assets/98168605/a2cccabd-5a7b-44cc-98d3-aea85b57d209)
 
 ### Brief Overview
 
@@ -42,5 +40,3 @@ In the code, the function `drawMatches()` was used to draw matches between two i
 The homography between two images was estimated using `est_homography()`. This function used the Singular Value Decomposition (SVD) method to find the homography matrix that best aligns the matched points in the source and destination images.
 
 The `apply_homography()` function was used to apply the estimated homography to the source points and transformed them into the coordinate frame of the destination image.
-
-This section demonstrated the application of keypoint detection, matching, and homography estimation to stitch together multiple images into a single panorama. This is an essential technique in many applications including virtual reality, video stitching, and panoramic photography.
