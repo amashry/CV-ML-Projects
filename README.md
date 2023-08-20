@@ -101,17 +101,28 @@ The final project focuses on implementing visual odometry to reconstruct the 3D 
 
 This project aims to provide an interactive visualization of the California Housing Data, focusing primarily on plotting the data on a map according to the longitude and latitude, with house prices reflected visually. The visualization further allows users to filter data based on various housing features to better understand the distribution.
 
- <img src="/ML-Projects/project1-interactive-visualization/results/sample_plot_result.png" alt="Plotly Express Interactive Plot" width=70%>
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/ML-Projects/project1-interactive-visualization)
+
+ <img src="ML-Projects/project1-interactive-visualization/results/sample_plot_result.png" alt="Plotly Express Interactive Plot" width=70%>
  
 ## Project 2 - SGD Extensions and Variants Implementation & Animation
 
 The project details the implementation of three optimization techniques: Vanilla SGD, Momentum-based SGD, and Adagrad. They're tested on the Rosenbrock and Styblinski-Tang functions, with their performances visualized through animations showing solution paths on function contours.
 
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/ML-Projects/project2-Advanced-SGD-Methods)
+
 Rosenbrock Animation
 
-<img src="/ML-Projects/project2-Advanced-SGD-Methods/results/Rosenbrock.gif" width=70%>
+<img src="ML-Projects/project2-Advanced-SGD-Methods/results/Rosenbrock.gif" width=70%>
 
 Styblinski_tang Animation 
 
-<img src="/ML-Projects/project2-Advanced-SGD-Methods/results/styblinski_tang.gif" width=70%>
+<img src="ML-Projects/project2-Advanced-SGD-Methods/results/styblinski_tang.gif" width=70%>
 
+## Project3 -  Learning Robotic Control for the Double Pendulum by using Double DQN with Prioritized Experience Replay 
+
+The goal of this project was to learn a control policy to solve the Acrobot-v1 task, a classic control problem where a two-link robot with pivoting joints must swing its end to a specific location. For this, we implemented a Double DQN with prioritized experience replay and compared its performance to a standard DQN with uniform experience replay.
+
+[Click here to view implementation and more details](https://github.com/amashry/CV-ML-Projects/tree/main/ML-Projects/project3-Acrobot-Reinforcement-Learning)
+
+<img src="https://www.gymlibrary.dev/_images/acrobot.gif" width=60%>
