@@ -59,7 +59,7 @@ The fifth project explores the topic of Structure from Motion (SfM), a technique
 
 ### Project 6: Image Classification and Semantic Segmentation 
 
-The sixth homework is divided into two parts:
+The sixth project is divided into two parts:
 - **Part 1**: Involves training an image classifier using the CIFAR-10 dataset and the PyTorch library. The classifier is trained to correctly identify images across 10 different classes.
 
   <img src="https://github.com/amashry/CV-ML-Projects/assets/98168605/4ae64a2b-e690-4082-a1bb-1baffb6f75a8" width=70%> 
